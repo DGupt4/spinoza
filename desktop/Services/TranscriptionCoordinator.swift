@@ -258,7 +258,6 @@ final class TranscriptionCoordinator {
 
         priorApp = NSWorkspace.shared.frontmostApplication
         targetAppIcon = priorApp?.icon
-        DictationSound.start.play()
         isRecording          = true
         sessionID           += 1
         let session          = sessionID
@@ -282,7 +281,6 @@ final class TranscriptionCoordinator {
     private func endRecording() {
         guard isRecording else { return }
         isRecording   = false
-        DictationSound.stop.play()
         statusMessage = "Transcribing…"
 
         let fallbackText = currentTranscription
