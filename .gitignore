@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Local Python virtualenv (hundreds of MB of unrelated tooling)
+.venv/
+
+# Build output and stale extracted app bundle
+build/
+Voice/
+*.dmg
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Xcode user state and build artifacts
+xcuserdata/
+**/xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/
+.swiftpm/
+*.xcresult
